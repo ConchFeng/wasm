@@ -1,3 +1,4 @@
 #  qt wasm build
 
-docker run -v $PWD/build_wasm:/project/build -v $PWD:/project/source qt541-wasm-with-thread:latest
+docker pull colorlength/qt-webassembly-build-env:latest
+docker run -v $BUILD_PWD/build_wasm:/project/build -v $SOURCE_PWD:/project/source colorlength/qt-webassembly-build-env:latest
